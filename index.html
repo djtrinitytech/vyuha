@@ -272,6 +272,10 @@ section{ position:relative; overflow:hidden; }
 .hero-meta div{ border-left: 2px solid var(--maroon); padding-left:14px; }
 .hero-meta .label{ font-size:.66rem; letter-spacing:.2em; opacity:.6; margin-bottom:4px; }
 .hero-meta .value{ font-family: var(--font-display); font-size:1.35rem; letter-spacing:.03em; }
+.hero-register{ margin-top:34px; display:flex; align-items:center; }
+.hero-register .btn{ min-width:190px; justify-content:center; gap:12px; box-shadow:0 12px 32px rgba(92,21,32,.28); }
+.hero-register .btn::after{ content:'↗'; font-size:1.05rem; transition:transform .25s ease; }
+.hero-register .btn:hover::after{ transform:translate(3px,-3px); }
 .hero-scroll{ position:absolute; bottom:32px; left:var(--edge); display:flex; align-items:center; gap:10px; font-size:.66rem; letter-spacing:.24em; color:var(--cream-soft); }
 .hero-scroll .line{ width:34px; height:1px; background:var(--cream-soft); position:relative; overflow:hidden; }
 .hero-scroll .line::after{ content:''; position:absolute; left:-100%; top:0; bottom:0; width:100%; background:var(--cream); animation: slide 2.2s linear infinite; }
@@ -665,6 +669,9 @@ body.register-modal-open{overflow:hidden!important;}
         <div><div class="label">TOURNAMENT DATES</div><div class="value">27 OCT — 2 NOV 2026</div></div>
         <div><div class="label">ORGANISED BY</div><div class="value">DJSCE TRINITY</div></div>
         <div><div class="label">SPORTS</div><div class="value">5 EVENTS</div></div>
+      </div>
+      <div class="hero-register">
+        <a href="#" class="btn btn-fill magnetic register-launch" data-cursor="hover" data-register-modal>REGISTER NOW</a>
       </div>
     </div>
     <div class="hero-scroll"><span class="line"></span> SCROLL</div>
